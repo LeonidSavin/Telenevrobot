@@ -19,7 +19,7 @@ class MedicalExamBot:
         def start_exam(message):
             user_id = message.from_user.id
             self.user_sessions[user_id] = {
-                'selected_tasks': random.sample(self.tasks, 5),
+                'selected_tasks': random.sample(self.tasks, 3),
                 'current_task_index': 0,
                 'current_question_index': 0,
                 'answers': [],
